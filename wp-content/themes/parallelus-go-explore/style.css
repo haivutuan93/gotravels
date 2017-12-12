@@ -1,0 +1,166 @@
+/*
+Theme Name: Go Explore!
+Theme URI: http://runwaywp.com
+Description: Go Explore! A tool to build travel websites for destinations, guide books, bloggers and so much more. Created with the Runway framework for WordPress.
+Author: Parallelus
+Author URI: http://para.llel.us/
+Version: 1.3.6
+Tags: one-column two-columns three-columns left-sidebar right-sidebar fixed-layout fluid-layout responsive-layout buddypress custom-menu editor-style featured-images flexible-header full-width-template sticky-post theme-options threaded-comments translation-ready
+License: GNU General Public License
+*/
+
+/* WP classes */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+.gallery-caption {}
+
+img[class*="wp-image-"] {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.wp-caption { }
+.wp-caption.aligncenter {
+	margin-bottom: 1rem;
+}
+.wp-caption img[class*="wp-image-"] { }
+.wp-caption .wp-caption-text { }
+
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.gallery dd {
+	margin: 0;
+}
+
+
+@media (max-width: 600px) {
+	img.alignleft, img.alignright,
+	.wp-caption.alignleft, .wp-caption.alignright {
+		clear: both;
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.wp-caption img { 
+		width: 100%;
+	}
+}
+
+/* Objects */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Reader Text */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; 
+}
+
+
+/* Content */
+.main-header, .main-header .page-title {
+	margin-top: 0
+} 
+.main-content-inner {
+	padding-bottom: 1.5em;
+}
+.hentry {
+	margin: 0 0 1.5em;
+}
+article.post.sticky .page-header h1 a {
+	font-weight: 500;
+}
+#content article .page-header h1 { 
+	margin-top: 0; 
+}
+#content article:first-child .page-header {
+	margin-top: 0;
+}
+.bypostauthor {}
+.edit-link a {
+	padding: 1rem 2rem;
+	background: #f0f1f2;
+	border-radius: 3px;
+	line-height: 1;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Comments */
+.form-allowed-tags-wrapper { display: none; }
+
+/* Widgets */
+.widget { margin-bottom: 2em; }
+.widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
+.widget_search .search-form input[type="submit"] { display: none; }
+.widget_search .search-form .form-group,
+.widget_search .search-form .search-field { width: 100% }
+.widget select {
+	max-width: 100%;
+}
+
+/* Adjust design around WP admin bar */
+.admin-bar .navbar-wrapper .navbar-fixed-top,
+.admin-bar #SubMenu.affix {
+	margin-top: 32px;
+}
+@media (max-width: 782px) {
+	.admin-bar .navbar-wrapper .navbar-fixed-top,
+	.admin-bar #SubMenu.affix {
+		margin-top: 46px !important;
+	}
+}
+@media (max-width: 600px) {
+	.admin-bar .navbar-wrapper .navbar-fixed-top {
+		position: absolute;
+	}
+	.admin-bar #SubMenu.affix {
+		top: 0 !important;
+		margin-top: 0 !important;
+	}
+} 

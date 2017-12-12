@@ -1,0 +1,11 @@
+Blop Posts (loop)
+	index.php	->	content-post.php
+	
+Blop Post - Single
+	single.php	->	content-post-single.php
+	
+Page Templates
+	page.php	->	/templates/page-{template_name}.php	->	content-page.php
+
+Search
+	search.php	->	content-search.php

@@ -1,0 +1,109 @@
+.remove_custom_contact, .remove_custom_other { margin: 5px 0 0 8px; cursor: pointer; width: 10px; height: 10px; display: inline-block; text-indent: -9999px; overflow: hidden; }
+.remove_custom_contact:active, .remove_custom_other:active { background-position: -10px 0 !important }
+.details-contacts td, .details-other td, .contact-extra-description td, .contact-extra-add td, .other-extra-description td, .other-extra-add td { padding-bottom: 0; padding-left: 0; }
+.contact-extra-description td, .other-extra-description td { padding-top: 0; }
+.contact-extra-add td, .other-extra-add td { padding-top: 8px; }
+.contact-extra-description td p.description, .other-extra-description td p.description { font-size: 13px; }
+#guide_lists_intro, #destination_intro, #destination_page_intro, #destination_master_intro { margin-top: 20px; margin-bottom: 5px; }
+.raterater-bg-layer { color: rgba(0, 0, 0, 0.2); }
+.raterater-hover-layer { color: rgba(255, 255, 0, 0.75); }
+.raterater-hover-layer.rated { color: rgba(255, 255, 0, 1); /* after the user selects a rating */ }
+.raterater-rating-layer { color: rgba(255, 255, 0, 0.75); }
+.raterater-outline-layer { color: rgba(0, 0, 0, 0.01); }
+
+/* don't change these - you might break something.. */
+.raterater-wrapper { overflow: visible; }
+.raterater-layer, .rrr i, .raterater-layer i { display: block; position: absolute; overflow: visible; top: 0px; left: 0px; }
+.raterater-hover-layer { display: none; }
+.raterater-hover-layer i, .raterater-rating-layer i { width: 0px; overflow: hidden; }
+.rating-block { width: 150px; }
+.rating-block-form { width: 130px; }
+.rating-block-next { margin-top: 5px; }
+.rating-block-cb { width: 20%; float: left; }
+.rating-block-input { width: 5%; float: left; }
+.rating-block-item { width: 16%; float: left; }
+.rate1-custom { color: #dd9933; }
+.rate2-custom { color: #6cbc3a; }
+.heart-custom { color: #dd3333; }
+.master-pages .wp-list-table thead tr th#title, .guide-pages .wp-list-table thead tr th#title { width: 70%; }
+tr.disabled { color: #919294; /*background-color: #EDEEF0;*/ }
+tr.disabled.alternate, .striped>tbody>tr.disabled:nth-child(odd) { /*background-color: #e0e2e6;*/ }
+tr.disabled .column-title a { color: #919294; }
+tr.disabled .column-title a.enable { color: #0A8C00; font-weight: bold; }
+tr.disabled .column-title a.enable:hover { color: #3AB000; }
+
+/* Map InfoBoxes */
+.infobox-destination {
+	width: 300px;
+	background: #444;
+	color: #ccc;
+	font-family: sans-serif;
+	font-size: 12px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px;
+}
+.infobox-destination > img {
+	z-index: 1; /* targets close button */
+}
+.infobox-destination-image {
+	/*padding: -5px;*/
+	height: 169px;
+	background-size: cover;
+	background-position: 50%;
+}
+.infobox-destination-image img {
+	opacity: 0; /* hidden for bg image on container */
+}
+.infobox-destination-text, .infobox-destination-title {
+	padding: 0 10px;
+	margin: 8px 0;
+}
+.infobox-destination-title {
+	font-size: 18px;    /*font-weight: 600;*/
+	color: #fff;
+	margin-bottom: 4px;
+}
+.infobox-destination-title a, .infobox-destination-title a:hover, .infobox-destination-title a:active, .infobox-destination-title a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.infobox-destination-text {
+
+	/*margin-top: 2px;*/
+}
+.infobox-destination-text p {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.infobox-destination-ratings {
+	padding: 0 10px;
+	margin: 5px 0;
+}
+.infobox-destination .rating-container {
+	display: inline-block;
+}
+.infobox-destination .rating-container .raterater-bg-layer {
+	color: #111;
+	color: rgba(0,0,0,.7);
+}
+.infobox-value-rating {
+	width: 3em;
+	font-size: 12px;
+	line-height: 16px;
+	color: #aaa;
+}
+.infobox-destination:after {
+	right: 100%;
+	top: 59px; /* 50% */
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(51, 51, 51, 0);
+	border-right-color: #444;
+	border-width: 10px;
+	margin-top: -10px;
+}
